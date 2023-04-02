@@ -16,6 +16,12 @@ import { httpInterceptorProviders } from './_helpers/http.interceptor';
 import {LocationMapComponent} from "./location-map/location-map.component";
 import {LocationService} from "./location.service";
 import { CalendarComponent } from './calendar/calendar.component';
+import interactionPlugin from '@fullcalendar/interaction';
+import dayGridPlugin from '@fullcalendar/daygrid';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -31,8 +37,9 @@ import { CalendarComponent } from './calendar/calendar.component';
     CalendarComponent
   ],
   imports: [
-    FullCalendarModule,
+
     BrowserModule,
+    FullCalendarModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule

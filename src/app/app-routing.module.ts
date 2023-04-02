@@ -9,9 +9,11 @@ import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import {LocationMapComponent} from "./location-map/location-map.component";
+import {CalendarComponent} from "./calendar/calendar.component";
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'calendar', component: CalendarComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
